@@ -9,3 +9,5 @@ node_modules/
 
 project/project
 project/target
+
+.bloop/
