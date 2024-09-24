@@ -1,2 +1,11 @@
-*.class
-*.log
+target/
+
+
+.bsp/
+.metals/
+.scala-build/
+.vscode/
+node_modules/
+
+project/project
+project/target
