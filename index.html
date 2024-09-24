@@ -1,13 +1,46 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Time Calculator</title>
+</head>
+
+<body>
+  <div id="app">
+    <h1>Work Time Calculator</h1>
+
+    <div class="row" id="required">
+      <label for="requiredTime">Required time</label>
+      <input type="time" value="08:24" id="requiredTime">
+    </div>
+
+    <div class="row">
+      <div class="timeParts">
+        <label for="startTime">Start time</label>
+        <input type="time" id="startTime">
+      </div>
+  
+      <div class="timeParts">
+        <label for="breakStart">Break start time</label>
+        <input type="time" id="breakStart">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="timeParts">
+        <label for="breakEnd">Break end time</label>
+        <input type="time" id="breakEnd">
+      </div>
+      <div class="timeParts">
+        <label for="endTime">End time</label>
+        <p>24:59</p>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>
