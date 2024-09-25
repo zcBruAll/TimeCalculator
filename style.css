@@ -50,6 +50,7 @@ label, input, p {
   width: 150px;
   height: 25px;
   margin: 0px;
+  text-align: center;
 }
 
 #app {
