@@ -10,33 +10,52 @@
 
 <body>
   <div id="app">
-    <h1>Work Time Calculator</h1>
+    <h1>Time Calculator</h1>
 
-    <div class="row" id="required">
-      <label for="requiredTime">Required time</label>
-      <input type="time" value="08:24" id="requiredTime">
-    </div>
+    <div id="apps">
 
-    <div class="row">
-      <div class="timeParts">
-        <label for="startTime">Start time</label>
-        <input type="time" id="startTime">
+      <div id="timeCalculator">
+        <h2>Work Time Calculator</h2>
+        <div class="row" id="required">
+          <label for="requiredTime">Required time</label>
+          <input type="time" value="08:24" id="requiredTime">
+        </div>
+    
+        <div class="row">
+          <div class="timeParts">
+            <label for="startTime">Start time</label>
+            <input type="time" id="startTime">
+          </div>
+      
+          <div class="timeParts">
+            <label for="breakStart">Break start time</label>
+            <input type="time" id="breakStart">
+          </div>
+        </div>
+    
+        <div class="row">
+          <div class="timeParts">
+            <label for="breakEnd">Break end time</label>
+            <input type="time" id="breakEnd">
+          </div>
+          <div class="timeParts">
+            <label for="endTime">End time</label>
+            <p id="endTime">--:--</p>
+          </div>
+        </div>
       </div>
   
-      <div class="timeParts">
-        <label for="breakStart">Break start time</label>
-        <input type="time" id="breakStart">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="timeParts">
-        <label for="breakEnd">Break end time</label>
-        <input type="time" id="breakEnd">
-      </div>
-      <div class="timeParts">
-        <label for="endTime">End time</label>
-        <p id="endTime">--:--</p>
+      <div id="timeConverter">
+        <h2>Time Converter</h2>
+        <div class="row">
+          <label for="timeToConvert" title="Workday time is required time">Time in hours: </label>
+          <input type="text" placeholder="HH:mm" id="timeToConvert" title="Workday time is required time">
+        </div>
+  
+        <div class="row">
+          <label for="timeConverted">Workdays:</label>
+          <p id="timeConverted">--</p>
+        </div>
       </div>
     </div>
   </div>

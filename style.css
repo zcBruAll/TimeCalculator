@@ -65,6 +65,18 @@ label, input, p {
   box-shadow: 5px 5px 5px black;
 }
 
+#apps {
+  display: flex;
+}
+
+#timeCalculator, #timeConverter {
+  width: 350px;
+}
+
+#timeConverter {
+  border-left: 1px white solid;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
